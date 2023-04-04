@@ -27,6 +27,7 @@ class dataloader:
                 self.f.write(result+"\n")
             else:
                 pass
+        self.f.close()
 
 
 
