@@ -15,9 +15,9 @@ class dataloader:
     def load_input(self,i):
         return cv.imread(self.input_data[i])
     
-    def load_result(self,index,results):
+    def load_result(self,index,results,classID=41):
         for row in results:
-            #if(row[5] == 41):
+            if(row[5] == classID):
                 xmin = round(row[0])
                 ymin = round(row[1])
                 xmax = round(row[2])
@@ -25,8 +25,8 @@ class dataloader:
                 id = row[4]
                 result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
                 self.f.write(result+"\n")
-            #else:
-            #    pass
+            else:
+                pass
         self.f.close()
 
 
