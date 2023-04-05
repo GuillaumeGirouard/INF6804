@@ -35,8 +35,7 @@ class dataloader:
                 bb_top = row[1]
                 bb_width = row[2]-row[0]
                 bb_height = row[3]-row[1]
-                conf = row[6]
-                result = str(index) + ", " + str(id) + ", " + str(bb_left) + ", " + str(bb_top) + ", " + str(bb_width) + ", " + str(bb_height) + ", " + str(conf) + ", -1, -1, -1"
+                result = str(index) + ", " + str(id) + ", " + str(bb_left) + ", " + str(bb_top) + ", " + str(bb_width) + ", " + str(bb_height) + ", " + "-1, -1, -1, -1"
                 print("result :" + result + '\n')
                 self.f.write(result+"\n")
 
