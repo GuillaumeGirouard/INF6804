@@ -16,35 +16,29 @@ class dataloader:
     def load_input(self,i):
         return cv.imread(self.input_data[i])
     
-    def load_result(self,index,results,classID=41,benchmark_type = 'RESULT'):
-        self.f = open(self.path_output_txt,'w')
+    def load_result(self,index,results,benchmark_type = 'RESULT'):
         if(benchmark_type == 'RESULT'):
             for row in results:
-                if(row[5] == classID):
-                    xmin = row[0]
-                    ymin = row[1]
-                    xmax = row[2]
-                    ymax = row[3]
-                    id = row[4]
-                    result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
-                    self.f.write(result+"\n")
-                else:
-                    pass
+                xmin = row[0]
+                ymin = row[1]
+                xmax = row[2]
+                ymax = row[3]
+                id = row[4]
+                result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
+                self.f.write(result+"\n")
+
         elif(benchmark_type == 'MOT'):
             for row in results:
-                if(row[5] == classID):
-                    frame = i
-                    id = row[4]
-                    bb_left = row[0]
-                    bb_top = row[1]
-                    bb_width = row[2]-row[0]
-                    bb_height = row[3]-row[1]
-                    conf = row[6]
-                    result = str(index) + ", " + str(id) + ", " + str(bb_left) + ", " + str(bb_top) + ", " + str(bb_width) + ", " + str(bb_height) + ", " + str(conf) + ", -1, -1, -1"
-                    self.f.write(result+"\n")
-                else:
-                    pass
-        self.f.close()
+                frame = i
+                id = row[4]
+                bb_left = row[0]
+                bb_top = row[1]
+                bb_width = row[2]-row[0]
+                bb_height = row[3]-row[1]
+                conf = row[6]
+                result = str(index) + ", " + str(id) + ", " + str(bb_left) + ", " + str(bb_top) + ", " + str(bb_width) + ", " + str(bb_height) + ", " + str(conf) + ", -1, -1, -1"
+                self.f.write(result+"\n")
+
 
 
 
