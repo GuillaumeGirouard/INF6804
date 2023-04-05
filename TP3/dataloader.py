@@ -29,7 +29,7 @@ class dataloader:
 
         elif(benchmark_type == 'MOT'):
             for row in results:
-                frame = i
+                frame = index
                 id = row[4]
                 bb_left = row[0]
                 bb_top = row[1]
