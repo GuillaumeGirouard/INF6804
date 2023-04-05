@@ -8,6 +8,7 @@ from natsort import natsorted, ns
 class dataloader:
     def __init__(self,path_frames = "./frames/",path_output_txt = "./"):
         self.path_frames = path_frames
+        self.path_output_txt = path_output_txt
         self.input_data = [str(p) for p in Path( self.path_frames).glob('*.jpg')]
         self.input_data = natsorted(self.input_data, key=lambda y: y.lower())
         self.f = open(path_output_txt,'w')
@@ -15,18 +16,34 @@ class dataloader:
     def load_input(self,i):
         return cv.imread(self.input_data[i])
     
-    def load_result(self,index,results,classID=41):
-        for row in results:
-            if(row[5] == classID):
-                xmin = round(row[0])
-                ymin = round(row[1])
-                xmax = round(row[2])
-                ymax = round(row[3])
-                id = row[4]
-                result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
-                self.f.write(result+"\n")
-            else:
-                pass
+    def load_result(self,index,results,classID=41,benchmark_type = 'RESULT'):
+        self.f = open(self.path_output_txt,'w')
+        if(benchmark_type == 'RESULT'):
+            for row in results:
+                if(row[5] == classID):
+                    xmin = row[0]
+                    ymin = row[1]
+                    xmax = row[2]
+                    ymax = row[3]
+                    id = row[4]
+                    result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
+                    self.f.write(result+"\n")
+                else:
+                    pass
+        elif(benchmark_type == 'MOT'):
+            for row in results:
+                if(row[5] == classID):
+                    frame = i
+                    id = row[4]
+                    bb_left = row[0]
+                    bb_top = row[1]
+                    bb_width = row[2]-row[0]
+                    bb_height = row[3]-row[1]
+                    conf = row[6]
+                    result = str(index) + ", " + str(id) + ", " + str(bb_left) + ", " + str(bb_top) + ", " + str(bb_width) + ", " + str(bb_height) + ", " + str(conf) + ", -1, -1, -1"
+                    self.f.write(result+"\n")
+                else:
+                    pass
         self.f.close()
 
 
@@ -38,3 +55,5 @@ class dataloader:
 # image = data.load_input(0)
 # data.load_result(1,results)
 # print(image)
+
+# MOT file format: <frame>, <id>, <bb_left>, <bb_top>, <bb_width>, <bb_height>, <conf>, <x>, <y>, <z>
