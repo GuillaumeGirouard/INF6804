@@ -25,8 +25,8 @@ class dataloader:
                 id = row[4]
                 result = str(index) + " " + str(id) + " " + str(xmin) + " " + str(ymin) + " " + str(xmax-xmin) + " " + str(ymax-ymin)
                 self.f.write(result+"\n")
-            else:
-                pass
+            #else:
+            #    pass
         self.f.close()
 
 
