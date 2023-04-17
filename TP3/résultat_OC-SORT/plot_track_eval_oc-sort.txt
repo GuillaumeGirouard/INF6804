@@ -1,3 +1,4 @@
+
 Eval Config:
 USE_PARALLEL         : False                         
 NUM_PARALLEL_CORES   : 1                             
@@ -39,68 +40,68 @@ Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox da
 
 Evaluating OC-SORT
 
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-02-DPM)              0.2927 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1870 sec
-    HOTA.eval_sequence()                                                   0.2512 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-02-DPM)              0.3019 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1948 sec
+    HOTA.eval_sequence()                                                   0.2771 sec
     Count.eval_sequence()                                                  0.0000 sec
-1 eval_sequence(MOT17-02-DPM, OC-SORT)                                   0.7335 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-04-DPM)              0.9248 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3795 sec
-    HOTA.eval_sequence()                                                   0.4801 sec
+1 eval_sequence(MOT17-02-DPM, OC-SORT)                                   0.7770 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-04-DPM)              0.9788 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.6515 sec
+    HOTA.eval_sequence()                                                   0.8229 sec
     Count.eval_sequence()                                                  0.0000 sec
-2 eval_sequence(MOT17-04-DPM, OC-SORT)                                   1.7912 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-05-DPM)              0.1329 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2383 sec
-    HOTA.eval_sequence()                                                   0.2995 sec
+2 eval_sequence(MOT17-04-DPM, OC-SORT)                                   2.4619 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-05-DPM)              0.2817 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.4112 sec
+    HOTA.eval_sequence()                                                   0.5471 sec
     Count.eval_sequence()                                                  0.0000 sec
-3 eval_sequence(MOT17-05-DPM, OC-SORT)                                   0.6749 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-09-DPM)              0.1173 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1606 sec
-    HOTA.eval_sequence()                                                   0.1916 sec
+3 eval_sequence(MOT17-05-DPM, OC-SORT)                                   1.2453 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-09-DPM)              0.2288 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2745 sec
+    HOTA.eval_sequence()                                                   0.3489 sec
     Count.eval_sequence()                                                  0.0000 sec
-4 eval_sequence(MOT17-09-DPM, OC-SORT)                                   0.4722 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-10-DPM)              0.2065 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2088 sec
-    HOTA.eval_sequence()                                                   0.2580 sec
+4 eval_sequence(MOT17-09-DPM, OC-SORT)                                   0.8566 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-10-DPM)              0.3758 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3164 sec
+    HOTA.eval_sequence()                                                   0.2744 sec
     Count.eval_sequence()                                                  0.0000 sec
-5 eval_sequence(MOT17-10-DPM, OC-SORT)                                   0.6765 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-11-DPM)              0.1846 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2513 sec
-    HOTA.eval_sequence()                                                   0.3428 sec
+5 eval_sequence(MOT17-10-DPM, OC-SORT)                                   0.9700 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-11-DPM)              0.1833 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2673 sec
+    HOTA.eval_sequence()                                                   0.3696 sec
     Count.eval_sequence()                                                  0.0000 sec
-6 eval_sequence(MOT17-11-DPM, OC-SORT)                                   0.7829 sec
-    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-13-DPM)              0.1759 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2220 sec
-    HOTA.eval_sequence()                                                   0.2542 sec
+6 eval_sequence(MOT17-11-DPM, OC-SORT)                                   0.8249 sec
+    MotChallenge2DBox.get_raw_seq_data(OC-SORT, MOT17-13-DPM)              0.1889 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2305 sec
+    HOTA.eval_sequence()                                                   0.2804 sec
     Count.eval_sequence()                                                  0.0000 sec
-7 eval_sequence(MOT17-13-DPM, OC-SORT)                                   0.6557 sec
+7 eval_sequence(MOT17-13-DPM, OC-SORT)                                   0.7035 sec
 
-All sequences for OC-SORT finished in 5.79 seconds
+All sequences for OC-SORT finished in 7.84 seconds
 
 HOTA: OC-SORT-pedestrian           HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
-MOT17-02-DPM                       27.911    15.409    50.58     15.659    81.892    52.842    85.233    84.674    28.142    33.727    81.769    27.578    
-MOT17-04-DPM                       30.41     20.62     45.027    21.093    81.88     46.624    87.011    84.379    30.786    36.58     80.304    29.375    
-MOT17-05-DPM                       40.942    37.592    44.685    39.673    75.06     51.784    68.865    80.13     42.101    55.74     74.155    41.334    
-MOT17-09-DPM                       41.333    44.235    38.767    46.527    79.384    48.224    68.759    82.728    42.454    53.503    78.028    41.747    
-MOT17-10-DPM                       28.726    26.311    31.49     27.135    77.077    36.919    69.988    80.645    29.21     37.466    75.84     28.414    
-MOT17-11-DPM                       48.419    46.697    50.359    49.448    81.472    54.862    79.323    85.197    49.891    59.314    80.949    48.014    
-MOT17-13-DPM                       24.812    14.9      41.493    15.213    76.47     44.198    76.422    81.047    25.091    31.545    76.442    24.114    
-COMBINED                           32.714    24.279    44.269    25.008    79.91     48.221    79.863    83.283    33.241    40.525    78.883    31.967    
+MOT17-02-DPM                       31.414    19.568    50.553    19.937    84.89     52.86     88.433    86.617    31.729    36.477    83.803    30.569    
+MOT17-04-DPM                       32.256    22.35     46.623    22.876    84.615    48.135    89.744    86.629    32.647    38.713    82.89     32.089    
+MOT17-05-DPM                       42.515    41.532    43.671    44.625    74.022    51.255    67.652    80.447    44.137    58.689    73.718    43.265    
+MOT17-09-DPM                       48.878    51.611    46.433    54.468    81.518    50.938    79.417    84.192    50.283    61.72     80.029    49.394    
+MOT17-10-DPM                       35.615    33.355    38.125    34.892    76.238    42.407    76.028    80.71     36.462    47.514    75.116    35.691    
+MOT17-11-DPM                       52.606    51.455    54.131    55.897    79.71     60.666    79.606    85.395    54.961    65.268    80.243    52.373    
+MOT17-13-DPM                       30.081    21.038    43.226    21.617    78.745    45.502    79.72     82.668    30.528    36.965    78.453    29        
+COMBINED                           36.311    28.191    46.997    29.245    80.815    50.712    83.16     84.48     37.033    44.823    79.899    35.813    
 
 Count: OC-SORT-pedestrian          Dets      GT_Dets   IDs       GT_IDs    
-MOT17-02-DPM                       3553      18581     40        62        
-MOT17-04-DPM                       12251     47557     81        83        
-MOT17-05-DPM                       3656      6917      101       133       
-MOT17-09-DPM                       3121      5325      37        26        
-MOT17-10-DPM                       4520      12839     67        57        
-MOT17-11-DPM                       5727      9436      60        75        
-MOT17-13-DPM                       2316      11642     55        110       
-COMBINED                           35144     112297    441       546       
+MOT17-02-DPM                       4364      18581     50        62        
+MOT17-04-DPM                       12857     47557     76        83        
+MOT17-05-DPM                       4170      6917      120       133       
+MOT17-09-DPM                       3558      5325      39        26        
+MOT17-10-DPM                       5876      12839     88        57        
+MOT17-11-DPM                       6617      9436      90        75        
+MOT17-13-DPM                       3196      11642     74        110       
+COMBINED                           40638     112297    537       546       
 
 Timing analysis:
-MotChallenge2DBox.get_raw_seq_data                                     2.0346 sec
-MotChallenge2DBox.get_preprocessed_seq_data                            1.6475 sec
-HOTA.eval_sequence                                                     2.0774 sec
+MotChallenge2DBox.get_raw_seq_data                                     2.5392 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            2.3462 sec
+HOTA.eval_sequence                                                     2.9204 sec
 Count.eval_sequence                                                    0.0000 sec
-eval_sequence                                                          5.7868 sec
-Evaluator.evaluate                                                     8.0109 sec
+eval_sequence                                                          7.8392 sec
+Evaluator.evaluate                                                     10.0575 sec
